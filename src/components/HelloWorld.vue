@@ -28,8 +28,8 @@ export default {
     },
     modifyObject() {
       this.data = {
-        property1: "New Property 1",
-        property2: "New Property 2"
+        property1: "New Property 1. Check the console for a warning.",
+        property2: "New Property 2. Check the console for a warning."
       };
     },
     modifyObjectProp() {
