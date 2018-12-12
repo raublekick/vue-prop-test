@@ -9,6 +9,7 @@
     <p>
       Object prop:
       {{ data }}
+      <button @click="modifyObjectProp()">Modify</button>
       <button @click="modifyObject()">Modify</button>
     </p>    
   </div>
@@ -26,6 +27,12 @@ export default {
       this.msg = "The prop 'msg' has been modified. Check the console for a warning.";
     },
     modifyObject() {
+      this.data = {
+        property1: "New Property 1",
+        property2: "New Property 2"
+      };
+    },
+    modifyObjectProp() {
       this.data.property1 = "Property 1 has been modified. No warnings!";
     }
   }
